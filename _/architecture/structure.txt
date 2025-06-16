@@ -1,0 +1,123 @@
+{
+  "Systems": {
+    "AbilitySystem": {
+      "Classes": [
+        "AuraAbilitySystemComponent",
+        "AuraAttributeSet",
+        "AuraAbilitySystemLibrary",
+        "AuraGameplayAbility",
+        "ExecCalc_Damage"
+      ],
+      "Blueprints": [
+        "GA_FireBolt",
+        "GE_Damage",
+        "GE_PrimaryAttributes",
+        "DA_AbilityInfo"
+      ],
+      "ExternalLinks": ["Characters", "UI", "Actors"]
+    },
+    "CharacterSystem": {
+      "Player": {
+        "Class": "AuraCharacter",
+        "Base": "AuraCharacterBase",
+        "Controller": "AuraPlayerController",
+        "State": "AuraPlayerState"
+      },
+      "Enemy": {
+        "Class": "AuraEnemy",
+        "AIController": "AuraAIController",
+        "BehaviorTree": "BT_EnemyBehaviorTree"
+      },
+      "Interfaces": ["CombatInterface", "PlayerInterface", "EnemyInterface"],
+      "GASIntegration": true,
+      "UIIntegration": true
+    },
+    "UISystem": {
+      "HUD": "AuraHUD",
+      "UserWidget": "AuraUserWidget",
+      "Controllers": [
+        "AuraWidgetController",
+        "OverlayWidgetController",
+        "AttributeMenuWidgetController"
+      ],
+      "Widgets": [
+        "WBP_Overlay",
+        "WBP_HealthGlobe",
+        "WBP_XPBar"
+      ],
+      "DataAssets": [
+        "DA_AttributeInfo",
+        "DA_AbilityInfo",
+        "DA_LevelUpInfo"
+      ]
+    },
+    "ActorSystem": {
+      "CoreClasses": ["AuraProjectile", "AuraEffectActor"],
+      "BluePrints": [
+        "BP_HealthCrystal",
+        "BP_ManaCrystal",
+        "BP_FireArea",
+        "BP_FlamePillar",
+        "BP_TestActor"
+      ],
+      "Triggers": [
+        "OnOverlap",
+        "OnSphereOverlap"
+      ],
+      "GameplayEffects": [
+        "GE_PotionHeal",
+        "GE_CrystalHeal",
+        "GE_AreaFire"
+      ]
+    },
+    "AISystem": {
+      "Controller": "AuraAIController",
+      "BehaviorTrees": [
+        "BT_EnemyBehaviorTree",
+        "BT_ElementalistBehaviorTree"
+      ],
+      "Blackboard": "BB_EnemyBlackboard",
+      "Tasks": [
+        "BTT_Attack",
+        "BTT_Attack_Elementalist"
+      ],
+      "Services": [
+        "BTS_FindNearestPlayer"
+      ],
+      "EQS": [
+        "EQ_FindRangedAttackPosition"
+      ]
+    }
+  },
+  "IntegratedFlow": {
+    "PlayerSpawn": {
+      "Controller": "AuraPlayerController",
+      "HUDInit": "AuraHUD → AuraUserWidget → OverlayWidgetController",
+      "GASInit": "AuraAbilitySystemLibrary::InitializeDefaultAttributes",
+      "InputMapping": "EnhancedInput → AuraInputComponent"
+    },
+    "AbilityUsage": {
+      "Trigger": "GA_FireBolt",
+      "Effects": [
+        "GE_Damage → ExecCalc_Damage",
+        "GE_Cooldown_FireBolt",
+        "GE_Cost_FireBolt"
+      ],
+      "Target": "AuraEnemy"
+    },
+    "EnemyAI": {
+      "Spawn": "AuraEnemy",
+      "Control": "AuraAIController",
+      "BT": "BT_EnemyBehaviorTree",
+      "Actions": ["BTT_Attack", "GA_MeleeAttack"]
+    },
+    "UIFeedback": {
+      "AttributeChange": "OnRep_Health → OverlayWidgetController",
+      "WidgetsUpdated": ["WBP_HealthGlobe", "WBP_XPBar"]
+    },
+    "EnvironmentalInteraction": {
+      "Actors": ["BP_FireArea", "BP_HealthPotion"],
+      "TriggeredEffects": ["GE_AreaFire", "GE_PotionHeal"]
+    }
+  }
+}

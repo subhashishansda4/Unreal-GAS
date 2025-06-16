@@ -1,0 +1,139 @@
+FULL SYSTEM INTEGRATED FLOW
+[Game Start]
+    ↓
+[AuraCharacter Spawned]
+    ↓
+[AuraAbilitySystemComponent Initialized]
+    ↓
+[AuraHUD Created] → [WBP_Overlay] + [OverlayWidgetController]
+    ↓
+[Player Input] → [AuraPlayerController]
+    ↓
+[Activate GA_FireBolt]
+    ├─ Apply GE_Cost
+    ├─ Apply GE_Cooldown
+    └─ Apply GE_Damage → [ExecCalc_Damage]
+                         ↓
+                  Modify AuraAttributeSet
+                         ↓
+         → [OverlayWidgetController] → [WBP_HealthGlobe]
+
+[Enemy Hit]
+    ↓
+[AuraEnemy → AuraAttributeSet updated]
+    ↓
+[If Dead → MulticastHandleDeath → Dissolve FX]
+
+[Environmental Actor Triggered]
+    ↓
+[ApplyEffectToTarget via AuraEffectActor]
+    ↓
+[Health/Mana Modified]
+    ↓
+[WidgetController → WBP Updates]
+
+[Enemy AI Loop]
+    ↓
+[AuraAIController]
+    ↓
+[Behavior Tree + EQS → Tasks → GA Abilities]
+
+----------------------------------------------------------------------------------------------------------
+
+ABILITY SYSTEM FLOW
+[Player Input]
+    ↓
+[AuraPlayerController] 
+    ↓
+[TryActivateAbilityByTag] → [AuraAbilitySystemComponent]
+    ↓
+[GA_FireBolt (Blueprint)]
+    ├─ Applies: GE_Cooldown_FireBolt
+    ├─ Applies: GE_Cost_FireBolt
+    └─ Applies: GE_Damage
+              ↓
+       [ExecCalc_Damage (C++)]
+              ↓
+     [AuraAttributeSet::Health - modified]
+              ↓
+     [OverlayWidgetController] → [WBP_HealthGlobe]
+
+----------------------------------------------------
+
+CHARACTER SYSTEM FLOW
+[Game Start]
+    ↓
+[AuraGameModeBase] spawns → [AuraCharacter]
+    ↓
+[AuraCharacterBase::BeginPlay]
+    ├─ Init GAS: AuraAbilitySystemComponent
+    ├─ Apply Initial Effects via AuraAbilitySystemLibrary
+    └─ Init HUD: AuraHUD → AuraUserWidget → OverlayWidgetController
+
+[OnHit (GA Damage)]
+    ↓
+[AuraAttributeSet::OnRep_Health]
+    ↓
+[OverlayWidgetController]
+    ↓
+[WBP_HealthGlobe] / [WBP_XPBar]
+
+----------------------------------------------------
+
+UI SYSTEM FLOW
+[AuraHUD::BeginPlay]
+    ↓
+[CreateWidget<WBP_Overlay>]
+    ↓
+[SetWidgetController(OverlayWidgetController)]
+    ↓
+[BroadcastInitialValues]
+    ├─ Health → WBP_HealthGlobe
+    ├─ Mana   → WBP_ManaGlobe
+    └─ XP     → WBP_XPBar
+
+[Attribute Change Detected in AuraAttributeSet]
+    ↓
+[OverlayWidgetController::AttributeChanged]
+    ↓
+[Delegate → Update Widget Value]
+
+----------------------------------------------------
+
+ACTOR SYSTEM FLOW
+[BP_FireArea]
+    ↓
+[OnOverlap(Player)]
+    ↓
+[AuraEffectActor::ApplyEffectToTarget]
+    ↓
+[GE_AreaFire]
+    ↓
+[AuraAttributeSet::Health modified]
+    ↓
+[OverlayWidgetController]
+
+[Player overlaps with BP_HealthPotion]
+    ↓
+[AuraEffectActor::ApplyEffectToTarget]
+    ↓
+[GE_PotionHeal]
+    ↓
+[Health changes → UI Update]
+
+----------------------------------------------------
+
+AI SYSTEM FLOW
+[AuraEnemy Spawned]
+    ↓
+[Possessed by AuraAIController]
+    ↓
+[RunBehaviorTree (BT_EnemyBehaviorTree)]
+    ↓
+[BB_EnemyBlackboard initialized]
+    ↓
+[Services/Tasks Run]
+    ├─ BTS_FindNearestPlayer → Set Blackboard Key
+    └─ BTT_Attack → Trigger GA_MeleeAttack
+                      ↓
+            Applies GE_Damage → AuraAttributeSet

@@ -1,0 +1,209 @@
+SOURCE : C:\Users\Rahul\Documents\Unreal Projects\Aura\Source\Aura
+public
+	-> AbilitySystem
+		- Abilities
+		- AbilityTasks
+		- AsyncTasks
+		- Data
+		- ExecCalc
+		- ModMagCalc
+		ability system header files
+	-> Actor
+	-> Character
+	-> Game
+	-> Input
+	-> Interaction
+	-> Player
+	-> UI
+		- HUD
+		- Widget
+		- WidgetController
+	core source header files
+private
+	-> AbilitySystem
+		- Abilities
+		- AbilityTasks
+		- AsyncTasks
+		- Data
+		- ExecCalc
+		- ModMagCalc
+		ability system cpp files
+	-> Actor
+	-> Character
+	-> Game
+	-> Input
+	-> Interaction
+	-> Player
+	-> UI
+		- HUD
+		- Widget
+		- WidgetController
+	core source cpp files
+	
+BLUEPRINT : C:\Users\Rahul\Documents\Unreal Projects\Aura\Content\Blueprints
+-> Ability System
+	- Aura
+		* Abilities
+			Fire
+				FireBolt
+					firebolt blueprint
+					firebolt gameplayability
+					firebolt-cooldown gameplay effect
+					firebolt-cost gameplay effect
+			Passive_Startup
+				listen-events gameplayability
+				effect-events gameplayeffect
+		* Effects
+			primary-attributes gameplayeffect
+			secondary-attributes gameplayeffect
+			vital-attributes gameplayeffect
+			damage gameplayeffect
+	- Data
+		cost curvetable
+		damage curvetable
+		damage-calculation-coefficients curvetable
+		xp-reward curvetable
+		ability-info dataasset
+		attribute-info dataasset
+		character-class-info dataasset
+		level-up-info dataasset
+		initial-primary-values datatable
+	- Enemy
+		* Abilities
+			slingshot-rock blueprint
+			enemy-firebolt gameplayability
+			hit-react gameplayability
+			melee-attack gameplayability
+			ranged-attack gameplayability
+			summon gameplayability
+			test gameplayability
+		* Cues
+			melee-impact gameplaycue
+		* Effects
+			CurveTables
+				primary-attributes-elementalist curvetable
+				primary-attributes-ranger curvetable
+				primary-attributes-warrior curvetable
+			hit-react gameplayeffect
+			primary-attributes-elementalist gameplayeffect
+			primary-attributes-ranger gameplayeffect
+			primary-attributes-warrior gameplayeffect
+			secondary-attributes-enemy gameplayeffect
+	- GameplayTags
+		primary-attributes datatable
+-> Actor
+	- Area
+		fire-area blueprint
+		fire-area gameplayeffect
+	- Crystal
+		health-crystal blueprint
+		health-crystal gameplayeffect
+		mana-crystal blueprint
+		mana-crystal gameplayeffect
+	- FadeActor
+		fade blueprintinterface
+		fade blueprint
+	- FlamePillar
+		flamepillar blueprint
+	- Potion
+		health-potion blueprint
+		health-potion gameplayeffect
+		mana-potion blueprint
+		mana-potion gameplayeffect
+		potion curvetable
+	- TestActor
+		test blueprint
+		test gameplayeffect
+-> AI
+	- AIController
+		ai-controller blueprint
+	- BehaviorTree
+		enemy blackboard
+		elementalist behaviortree
+		enemy behaviortree
+	- EQS
+		eqs-test blueprint
+		find-ranged-attack-position environmentquery
+		player-context environmentquerysystem
+	- Services
+		find-nearest-player behaviortreeservice
+	- Tasks
+		attack behaviortreetask
+		attack-elementalist behaviortreetask
+		go-around-target behaviortreetask
+-> AnimNotifies
+	montage-event animnotify
+-> Character
+	- Aura
+		aura animationblueprint
+		aura blueprint
+	- Demon
+		demon animationblueprint
+		demon blueprint
+		demon-ranger animationblueprint
+		demon-ranger blueprint
+	- Ghoul
+		ghoul animationblueprint
+		ghoul blueprint
+	- Goblin_Slingshot
+		goblin-slingshot animationblueprint
+		goblin-slingshot blueprint
+		slingshot animationblueprint
+	- Goblin_Spear
+		goblin-spear animationblueprint
+		goblin-spear blueprint
+	- Shaman
+		shaman animationblueprint
+		shaman blueprint
+	enemy-base animationblueprint
+	enemy-base blueprint
+-> Game
+	game-mode blueprint
+-> Input
+	- InputActions
+		ia-1 inputaction
+		ia-2 inputaction
+		ia-3 inputaction
+		ia-4 inputaction
+		ia-lmb inputaction
+		ia-rmb inputaction
+		ia-shift inputaction
+		ia-move inputaction
+	input-config dataasset
+	context inputmappingcontext
+-> Player
+	player-controller blueprint
+	player-state blueprint
+-> UI
+	- AttributeMenu
+		attribute-menu widgetblueprint
+		framed-value widgetblueprint
+		text-value-button-row widgetblueprint
+		text-value-row widgetblueprint
+	- Button
+		button widgetblueprint
+		wide-button widgetblueprint
+	- Data
+		message-widget-data datatable
+	- FloatingText
+		damage-text blueprint
+		damage-text widgetblueprint
+	- HUD
+		hud blueprint
+	- Overlay
+		* SubWidget
+			effect-message widgetblueprint
+			health-mana-spells widgetblueprint
+		overlay widgetblueprint
+	- ProgressBar
+		enemmy-healh-bar widgetblueprint
+		globe-progressbar widgetblueprint
+		health-globe widgetblueprint
+		mana-globe widgetblueprint
+		progress-bar widgetblueprint
+		xp-bar widgetblueprint
+	- SpellGlobe
+		spell-globe widgetblueprint
+	- WidgetController
+		attribute-menu-widget-controller blueprint
+		overlay-widget-controller blueprint

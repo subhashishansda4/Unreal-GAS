@@ -1,0 +1,118 @@
+==============================
+UNREAL ENGINE 5.5 PROJECT
+DEVELOPER DOCUMENTATION (TEXT)
+==============================
+
+🗂 OVERVIEW
+----------
+This document provides a structured breakdown of the entire Unreal Engine 5.5 project, including major systems, data flow, and dependencies across C++ and Blueprint assets.
+
+📦 MAJOR SYSTEMS
+---------------
+
+1. ABILITY SYSTEM (GAS)
+-----------------------
+- Core Classes:
+  - AuraAbilitySystemComponent
+  - AuraAttributeSet
+  - AuraAbilitySystemLibrary
+- Abilities:
+  - GA_FireBolt, GA_MeleeAttack
+- Effects:
+  - GE_Damage, GE_PrimaryAttributes
+- Calculations:
+  - ExecCalc_Damage, MMC_MaxHealth, MMC_MaxMana
+- Links to: Character System, UI System, Actor System
+
+2. CHARACTER SYSTEM
+-------------------
+- Player:
+  - AuraCharacter, AuraPlayerController, AuraPlayerState
+- Enemies:
+  - AuraEnemy, AuraAIController
+- Base Class:
+  - AuraCharacterBase
+- Interfaces:
+  - CombatInterface, PlayerInterface, EnemyInterface
+- Integrated with GAS, UI, and AI
+
+3. UI SYSTEM
+------------
+- HUD Class: AuraHUD
+- Base Widget: AuraUserWidget
+- Controllers:
+  - OverlayWidgetController, AttributeMenuWidgetController
+- Widgets:
+  - WBP_Overlay, WBP_HealthGlobe, WBP_XPBar
+- Data Assets:
+  - DA_AttributeInfo, DA_AbilityInfo, DA_LevelUpInfo
+
+4. ACTOR SYSTEM
+---------------
+- Core Classes:
+  - AuraProjectile, AuraEffectActor
+- Actor Blueprints:
+  - BP_HealthCrystal, BP_ManaCrystal, BP_Potion, BP_FireArea
+- Effects Triggered:
+  - GE_PotionHeal, GE_CrystalHeal, GE_AreaFire
+- Used For: Pickups, projectiles, AoE zones
+
+5. AI SYSTEM
+------------
+- AI Controller:
+  - AuraAIController
+- Behavior Trees:
+  - BT_EnemyBehaviorTree, BT_ElementalistBehaviorTree
+- Blackboard:
+  - BB_EnemyBlackboard
+- Tasks/Services:
+  - BTT_Attack, BTT_GoAroundTarget, BTS_FindNearestPlayer
+- EQS:
+  - EQ_FindRangedAttackPosition, EQS_PlayerContext
+
+
+🔄 GAMEPLAY FLOW (CONDENSED)
+----------------------------
+
+1. PLAYER INITIALIZATION
+- GameMode spawns AuraCharacter
+- GAS initialized via AuraAbilitySystemLibrary
+- UI loaded via AuraHUD → AuraUserWidget → OverlayWidgetController
+
+2. ABILITY ACTIVATION
+- Player input mapped through AuraPlayerController
+- Activates GA_FireBolt
+- Applies:
+  - GE_Damage (ExecCalc_Damage)
+  - GE_Cooldown_FireBolt
+  - GE_Cost_FireBolt
+
+3. ENEMY AI
+- AuraEnemy spawned and possessed by AuraAIController
+- Behavior Tree: BT_EnemyBehaviorTree or BT_ElementalistBehaviorTree
+
+4. UI FEEDBACK
+- Attributes replicated with OnRep_Health
+- OverlayWidgetController broadcasts to:
+  - WBP_HealthGlobe
+  - WBP_XPBar
+
+5. ENVIRONMENTAL EFFECTS
+- BP_HealthCrystal, BP_FireArea use AuraEffectActor::ApplyEffectToTarget
+- Applies effects like GE_AreaFire or GE_PotionHeal
+- Modifies attributes and updates UI
+
+
+📈 SYSTEM DEPENDENCY FLOW (TEXTUAL)
+----------------------------------
+
+[Ability System] → [Character System] → [UI System]
+        ↘︎                ↑
+        → [Actor System]  ↑
+                          ↑
+           [AI System] → [Character System]
+
+
+==============================
+END OF DOCUMENTATION
+==============================

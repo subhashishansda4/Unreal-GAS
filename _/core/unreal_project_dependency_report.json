@@ -1,0 +1,1969 @@
+{
+    "cpp_files": {
+        "Aura.cpp": {
+            "includes": [
+                "Aura.h",
+                "Modules/ModuleManager.h"
+            ],
+            "classes": []
+        },
+        "Aura.h": {
+            "includes": [
+                "CoreMinimal.h"
+            ],
+            "classes": []
+        },
+        "AuraLogChannels.cpp": {
+            "includes": [
+                "AuraLogChannels.h"
+            ],
+            "classes": []
+        },
+        "AuraLogChannels.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "Logging/LogMacros.h"
+            ],
+            "classes": []
+        },
+        "Private/AuraAbilityTypes.cpp": {
+            "includes": [
+                "AuraAbilityTypes.h"
+            ],
+            "classes": []
+        },
+        "Private/AuraAssetManager.cpp": {
+            "includes": [
+                "AuraAssetManager.h",
+                "AuraGameplayTags.h",
+                "AbilitySystemGlobals.h"
+            ],
+            "classes": []
+        },
+        "Private/AuraGameplayTags.cpp": {
+            "includes": [
+                "AuraGameplayTags.h",
+                "GameplayTagsManager.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/AuraAbilitySystemComponent.cpp": {
+            "includes": [
+                "AbilitySystem/AuraAbilitySystemComponent.h",
+                "AuraGameplayTags.h",
+                "AbilitySystem/Abilities/AuraGameplayAbility.h",
+                "Aura/AuraLogChannels.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/AuraAbilitySystemGlobals.cpp": {
+            "includes": [
+                "AbilitySystem/AuraAbilitySystemGlobals.h",
+                "AuraAbilityTypes.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/AuraAbilitySystemLibrary.cpp": {
+            "includes": [
+                "AbilitySystem/AuraAbilitySystemLibrary.h",
+                "Kismet/GameplayStatics.h",
+                "UI/HUD/AuraHUD.h",
+                "Player/AuraPlayerState.h",
+                "UI/WidgetController/AuraWidgetController.h",
+                "Game/AuraGameModeBase.h",
+                "GameplayEffectTypes.h",
+                "AbilitySystemComponent.h",
+                "AuraAbilityTypes.h",
+                "GameplayEffectTypes.h",
+                "Interaction/CombatInterface.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/AuraAttributeSet.cpp": {
+            "includes": [
+                "AbilitySystem/AuraAttributeSet.h",
+                "Net/UnrealNetwork.h",
+                "GameFramework/Character.h",
+                "GameplayEffectExtension.h",
+                "AbilitySystemBlueprintLibrary.h",
+                "AuraGameplayTags.h",
+                "Interaction/CombatInterface.h",
+                "Kismet/GameplayStatics.h",
+                "Player/AuraPlayerController.h",
+                "AbilitySystem/AuraAbilitySystemLibrary.h",
+                "Aura/AuraLogChannels.h",
+                "Interaction/PlayerInterface.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/Abilities/AuraDamageGameplayAbility.cpp": {
+            "includes": [
+                "AbilitySystem/Abilities/AuraDamageGameplayAbility.h",
+                "AbilitySystemBlueprintLibrary.h",
+                "AbilitySystemComponent.h",
+                "Interaction/CombatInterface.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/Abilities/AuraGameplayAbility.cpp": {
+            "includes": [
+                "AbilitySystem/Abilities/AuraGameplayAbility.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/Abilities/AuraMeleeAttack.cpp": {
+            "includes": [
+                "AbilitySystem/Abilities/AuraMeleeAttack.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/Abilities/AuraProjectileSpell.cpp": {
+            "includes": [
+                "AbilitySystem/Abilities/AuraProjectileSpell.h",
+                "Actor/AuraProjectile.h",
+                "Interaction/CombatInterface.h",
+                "AbilitySystemBlueprintLibrary.h",
+                "AbilitySystemComponent.h",
+                "Aura/Public/AuraGameplayTags.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/Abilities/AuraSummonAbility.cpp": {
+            "includes": [
+                "AbilitySystem/Abilities/AuraSummonAbility.h",
+                "Kismet/KismetSystemLibrary.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/AbilityTasks/TargetDataUnderMouse.cpp": {
+            "includes": [
+                "AbilitySystem/AbilityTasks/TargetDataUnderMouse.h",
+                "AbilitySystemComponent.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/AsyncTasks/WaitCooldownChange.cpp": {
+            "includes": [
+                "AbilitySystem/AsyncTasks/WaitCooldownChange.h",
+                "AbilitySystemComponent.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/Data/AbilityInfo.cpp": {
+            "includes": [
+                "AbilitySystem/Data/AbilityInfo.h",
+                "Aura/AuraLogChannels.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/Data/AttributeInfo.cpp": {
+            "includes": [
+                "AbilitySystem/Data/AttributeInfo.h",
+                "Aura/AuraLogChannels.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/Data/CharacterClassInfo.cpp": {
+            "includes": [
+                "AbilitySystem/Data/CharacterClassInfo.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/Data/LevelUpInfo.cpp": {
+            "includes": [
+                "AbilitySystem/Data/LevelUpInfo.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/ExecCalc/ExecCalc_Damage.cpp": {
+            "includes": [
+                "AbilitySystem/ExecCalc/ExecCalc_Damage.h",
+                "AbilitySystem/AuraAttributeSet.h",
+                "AuraGameplayTags.h",
+                "AbilitySystem/AuraAttributeSet.h",
+                "AbilitySystem/Data/CharacterClassInfo.h",
+                "AbilitySystem/AuraAbilitySystemLibrary.h",
+                "Interaction/CombatInterface.h",
+                "AuraAbilityTypes.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/ModMagCalc/MMC_MaxHealth.cpp": {
+            "includes": [
+                "AbilitySystem/ModMagCalc/MMC_MaxHealth.h",
+                "AbilitySystem/AuraAttributeSet.h",
+                "Interaction/CombatInterface.h"
+            ],
+            "classes": []
+        },
+        "Private/AbilitySystem/ModMagCalc/MMC_MaxMana.cpp": {
+            "includes": [
+                "AbilitySystem/ModMagCalc/MMC_MaxMana.h",
+                "AbilitySystem/AuraAttributeSet.h",
+                "Interaction/CombatInterface.h"
+            ],
+            "classes": []
+        },
+        "Private/Actor/AuraEffectActor.cpp": {
+            "includes": [
+                "Actor/AuraEffectActor.h",
+                "AbilitySystemBlueprintLibrary.h",
+                "AbilitySystemComponent.h",
+                "GameplayEffectTypes.h"
+            ],
+            "classes": []
+        },
+        "Private/Actor/AuraProjectile.cpp": {
+            "includes": [
+                "Actor/AuraProjectile.h",
+                "Components/SphereComponent.h",
+                "GameFramework/ProjectileMovementComponent.h",
+                "Kismet/GameplayStatics.h",
+                "NiagaraFunctionLibrary.h",
+                "Components/AudioComponent.h",
+                "Aura/Aura.h",
+                "AbilitySystemComponent.h",
+                "AbilitySystemBlueprintLibrary.h",
+                "AbilitySystem/AuraAbilitySystemLibrary.h"
+            ],
+            "classes": []
+        },
+        "Private/AI/AuraAIController.cpp": {
+            "includes": [
+                "AI/AuraAIController.h",
+                "BehaviorTree/BlackboardComponent.h",
+                "BehaviorTree/BehaviorTreeComponent.h"
+            ],
+            "classes": []
+        },
+        "Private/Character/AuraCharacter.cpp": {
+            "includes": [
+                "Character/AuraCharacter.h",
+                "GameFramework/CharacterMovementComponent.h",
+                "Player/AuraPlayerState.h",
+                "AbilitySystem/AuraAbilitySystemComponent.h",
+                "AbilitySystem/AuraAttributeSet.h",
+                "Player/AuraPlayerController.h",
+                "UI/HUD/AuraHUD.h"
+            ],
+            "classes": []
+        },
+        "Private/Character/AuraCharacterBase.cpp": {
+            "includes": [
+                "Character/AuraCharacterBase.h",
+                "AbilitySystemComponent.h",
+                "AbilitySystem/AuraAbilitySystemComponent.h",
+                "Components/CapsuleComponent.h",
+                "Aura/Aura.h",
+                "Aura/Public/AuraGameplayTags.h",
+                "Kismet/GameplayStatics.h"
+            ],
+            "classes": []
+        },
+        "Private/Character/AuraEnemy.cpp": {
+            "includes": [
+                "Character/AuraEnemy.h",
+                "AbilitySystem/AuraAbilitySystemComponent.h",
+                "AbilitySystem/AuraAttributeSet.h",
+                "Aura/Aura.h",
+                "Components/WidgetComponent.h",
+                "UI/Widget/AuraUserWidget.h",
+                "AbilitySystem/AuraAbilitySystemLibrary.h",
+                "AuraGameplayTags.h",
+                "GameFramework/CharacterMovementComponent.h",
+                "AI/AuraAIController.h",
+                "BehaviorTree/BehaviorTree.h",
+                "BehaviorTree/BlackboardComponent.h"
+            ],
+            "classes": []
+        },
+        "Private/Game/AuraGameModeBase.cpp": {
+            "includes": [
+                "Game/AuraGameModeBase.h"
+            ],
+            "classes": []
+        },
+        "Private/Input/AuraInputComponent.cpp": {
+            "includes": [
+                "Input/AuraInputComponent.h"
+            ],
+            "classes": []
+        },
+        "Private/Input/AuraInputConfig.cpp": {
+            "includes": [
+                "Input/AuraInputConfig.h"
+            ],
+            "classes": []
+        },
+        "Private/Interaction/CombatInterface.cpp": {
+            "includes": [
+                "Interaction/CombatInterface.h"
+            ],
+            "classes": []
+        },
+        "Private/Interaction/EnemyInterface.cpp": {
+            "includes": [
+                "Interaction/EnemyInterface.h"
+            ],
+            "classes": []
+        },
+        "Private/Interaction/PlayerInterface.cpp": {
+            "includes": [
+                "Interaction/PlayerInterface.h"
+            ],
+            "classes": []
+        },
+        "Private/Player/AuraPlayerController.cpp": {
+            "includes": [
+                "Player/AuraPlayerController.h",
+                "EnhancedInputSubsystems.h",
+                "Input/AuraInputComponent.h",
+                "Player/AuraPlayerController.h",
+                "Character/AuraEnemy.h",
+                "GameplayTagContainer.h",
+                "AbilitySystemBlueprintLibrary.h",
+                "AbilitySystem/AuraAbilitySystemComponent.h",
+                "Components/SplineComponent.h",
+                "AuraGameplayTags.h",
+                "NavigationPath.h",
+                "NavigationSystem.h",
+                "GameFramework/Character.h",
+                "UI/Widget/DamageTextComponent.h"
+            ],
+            "classes": []
+        },
+        "Private/Player/AuraPlayerState.cpp": {
+            "includes": [
+                "Player/AuraPlayerState.h",
+                "AbilitySystem/AuraAbilitySystemComponent.h",
+                "AbilitySystem/AuraAttributeSet.h",
+                "Net/UnrealNetwork.h"
+            ],
+            "classes": []
+        },
+        "Private/UI/HUD/AuraHUD.cpp": {
+            "includes": [
+                "UI/HUD/AuraHUD.h",
+                "UI/Widget/AuraUserWidget.h",
+                "UI/WidgetController/OverlayWidgetController.h",
+                "UI/WidgetController/AttributeMenuWidgetController.h"
+            ],
+            "classes": []
+        },
+        "Private/UI/Widget/AuraUserWidget.cpp": {
+            "includes": [
+                "UI/Widget/AuraUserWidget.h"
+            ],
+            "classes": []
+        },
+        "Private/UI/Widget/DamageTextComponent.cpp": {
+            "includes": [
+                "UI/Widget/DamageTextComponent.h"
+            ],
+            "classes": []
+        },
+        "Private/UI/WidgetController/AttributeMenuWidgetController.cpp": {
+            "includes": [
+                "UI/WidgetController/AttributeMenuWidgetController.h",
+                "AuraGameplayTags.h",
+                "AbilitySystem/Data/AttributeInfo.h",
+                "AbilitySystem/AuraAttributeSet.h"
+            ],
+            "classes": []
+        },
+        "Private/UI/WidgetController/AuraWidgetController.cpp": {
+            "includes": [
+                "UI/WidgetController/AuraWidgetController.h",
+                "UI/WidgetController/AuraWidgetController.h",
+                "UI/WidgetController/AuraWidgetController.h"
+            ],
+            "classes": []
+        },
+        "Private/UI/WidgetController/OverlayWidgetController.cpp": {
+            "includes": [
+                "UI/WidgetController/OverlayWidgetController.h",
+                "AbilitySystem/AuraAttributeSet.h",
+                "AbilitySystem/AuraAbilitySystemComponent.h",
+                "AbilitySystem/Data/AbilityInfo.h",
+                "Player/AuraPlayerState.h",
+                "AbilitySystem/Data/LevelUpInfo.h"
+            ],
+            "classes": []
+        },
+        "Public/AuraAbilityTypes.h": {
+            "includes": [
+                "GameplayEffectTypes.h",
+                "AuraAbilityTypes.generated.h"
+            ],
+            "classes": []
+        },
+        "Public/AuraAssetManager.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "Engine/AssetManager.h",
+                "AuraAssetManager.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/AuraGameplayTags.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "GameplayTagContainer.h"
+            ],
+            "classes": []
+        },
+        "Public/AbilitySystem/AuraAbilitySystemComponent.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "AbilitySystemComponent.h",
+                "AuraAbilitySystemComponent.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": [
+                        {
+                            "specifiers": "Client, Reliable",
+                            "declaration": "void ClientEffectApplied"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/AbilitySystem/AuraAbilitySystemGlobals.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "AbilitySystemGlobals.h",
+                "AuraAbilitySystemGlobals.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/AbilitySystem/AuraAbilitySystemLibrary.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "Kismet/BlueprintFunctionLibrary.h",
+                "Data/CharacterClassInfo.h",
+                "AuraAbilitySystemLibrary.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UOverlayWidgetController",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": [
+                        {
+                            "specifiers": "BlueprintCallable, Category = \"AuraAbilitySystemLibrary | CharacterClassDefaults\"",
+                            "declaration": "static void InitializeDefaultAttributes"
+                        },
+                        {
+                            "specifiers": "BlueprintCallable, Category = \"AuraAbilitySystemLibrary | CharacterClassDefaults\"",
+                            "declaration": "static void GiveStartupAbilities"
+                        },
+                        {
+                            "specifiers": "BlueprintPure, Category = \"AuraAbilitySystemLibrary | GameplayEffects\"",
+                            "declaration": "static bool IsBlockedHit"
+                        },
+                        {
+                            "specifiers": "BlueprintPure, Category = \"AuraAbilitySystemLibrary | GameplayEffects\"",
+                            "declaration": "static bool IsCriticalHit"
+                        },
+                        {
+                            "specifiers": "BlueprintCallable, Category = \"AuraAbilitySystemLibrary | GameplayEffects\"",
+                            "declaration": "static void SetIsBlockedHit"
+                        },
+                        {
+                            "specifiers": "BlueprintCallable, Category = \"AuraAbilitySystemLibrary | GameplayEffects\"",
+                            "declaration": "static void SetIsCriticalHit"
+                        },
+                        {
+                            "specifiers": "BlueprintCallable, Category = \"AuraAbilitySystemLibrary | GameplayMechanics\"",
+                            "declaration": "static void GetLivePlayersWithinRadius"
+                        },
+                        {
+                            "specifiers": "BlueprintPure, Category = \"AuraAbilitySystemLibrary | GameplayMechanics\"",
+                            "declaration": "static bool IsNotFriend"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/AbilitySystem/AuraAttributeSet.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "AttributeSet.h",
+                "AbilitySystemComponent.h",
+                "AuraAttributeSet.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_Strength, Category = \"Primary Attributes\"",
+                            "name": "h"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_Intelligence, Category = \"Primary Attributes\"",
+                            "name": "e"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_Resilience, Category = \"Primary Attributes\"",
+                            "name": "e"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_Vigor, Category = \"Primary Attributes\"",
+                            "name": "r"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_Armor, Category = \"Secondary Attributes\"",
+                            "name": "r"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_ArmorPenetration, Category = \"Secondary Attributes\"",
+                            "name": "n"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_BlockChance, Category = \"Secondary Attributes\"",
+                            "name": "e"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_CriticalHitChance, Category = \"Secondary Attributes\"",
+                            "name": "e"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_CriticalHitDamage, Category = \"Secondary Attributes\"",
+                            "name": "e"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_CriticalHitResistance, Category = \"Secondary Attributes\"",
+                            "name": "e"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_HealthRegeneration, Category = \"Secondary Attributes\"",
+                            "name": "n"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_ManaRegeneration, Category = \"Secondary Attributes\"",
+                            "name": "n"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_MaxHealth, Category = \"Vital Attributes\"",
+                            "name": "h"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_MaxMana, Category = \"Vital Attributes\"",
+                            "name": "a"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_FireResistance, Category = \"Resistance Attributes\"",
+                            "name": "e"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_LightningResistance, Category = \"Resistance Attributes\"",
+                            "name": "e"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_ArcaneResistance, Category = \"Resistance Attributes\"",
+                            "name": "e"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_PhysicalResistance, Category = \"Resistance Attributes\"",
+                            "name": "e"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_Health, Category = \"Vital Attributes\"",
+                            "name": "h"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, ReplicatedUsing = OnRep_Mana, Category = \"Vital Attributes\"",
+                            "name": "a"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, Category = \"Meta Attributes\"",
+                            "name": "e"
+                        },
+                        {
+                            "specifiers": "BlueprintReadOnly, Category = \"Meta Attributes\"",
+                            "name": "P"
+                        }
+                    ],
+                    "ufunctions": [
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_Strength"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_Intelligence"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_Resilience"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_Vigor"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_Armor"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_ArmorPenetration"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_BlockChance"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_CriticalHitChance"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_CriticalHitDamage"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_CriticalHitResistance"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_HealthRegeneration"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_ManaRegeneration"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_MaxHealth"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_MaxMana"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_FireResistance"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_LightningResistance"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_ArcaneResistance"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_PhysicalResistance"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_Health"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_Mana"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/AbilitySystem/Abilities/AuraDamageGameplayAbility.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "AbilitySystem/Abilities/AuraGameplayAbility.h",
+                "Interaction/CombatInterface.h",
+                "AuraDamageGameplayAbility.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": [
+                        {
+                            "specifiers": "BlueprintCallable",
+                            "declaration": "void CauseDamage"
+                        },
+                        {
+                            "specifiers": "BlueprintPure",
+                            "declaration": "FTaggedMontage GetRandomTaggedMontageFromArray"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/AbilitySystem/Abilities/AuraGameplayAbility.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "Abilities/GameplayAbility.h",
+                "AuraGameplayAbility.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [
+                        {
+                            "specifiers": "EditDefaultsOnly, Category = \"Input\"",
+                            "name": "g"
+                        }
+                    ],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/AbilitySystem/Abilities/AuraMeleeAttack.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "AbilitySystem/Abilities/AuraDamageGameplayAbility.h",
+                "AuraMeleeAttack.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/AbilitySystem/Abilities/AuraProjectileSpell.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "AbilitySystem/Abilities/AuraDamageGameplayAbility.h",
+                "AuraProjectileSpell.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AAuraProjectile",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": [
+                        {
+                            "specifiers": "BlueprintCallable, Category = \"Projectile\"",
+                            "declaration": "void SpawnProjectile"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/AbilitySystem/Abilities/AuraSummonAbility.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "AbilitySystem/Abilities/AuraGameplayAbility.h",
+                "AuraSummonAbility.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/AbilitySystem/AbilityTasks/TargetDataUnderMouse.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "Abilities/Tasks/AbilityTask.h",
+                "TargetDataUnderMouse.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [
+                        {
+                            "specifiers": "BlueprintAssignable",
+                            "name": "a"
+                        }
+                    ],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/AbilitySystem/AsyncTasks/WaitCooldownChange.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "EditorUtilityLibrary.h",
+                "GameplayTagContainer.h",
+                "ActiveGameplayEffectHandle.h",
+                "WaitCooldownChange.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UAbilitySystemComponent",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [
+                        {
+                            "specifiers": "BlueprintAssignable",
+                            "name": "t"
+                        },
+                        {
+                            "specifiers": "BlueprintAssignable",
+                            "name": "d"
+                        }
+                    ],
+                    "ufunctions": [
+                        {
+                            "specifiers": "BlueprintCallable",
+                            "declaration": "void EndTask"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/AbilitySystem/Data/AbilityInfo.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "Engine/DataAsset.h",
+                "GameplayTagContainer.h",
+                "AbilityInfo.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/AbilitySystem/Data/AttributeInfo.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "Engine/DataAsset.h",
+                "GameplayTagContainer.h",
+                "AttributeInfo.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/AbilitySystem/Data/CharacterClassInfo.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "Engine/DataAsset.h",
+                "ScalableFloat.h",
+                "CharacterClassInfo.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UGameplayEffect",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/AbilitySystem/Data/LevelUpInfo.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "Engine/DataAsset.h",
+                "LevelUpInfo.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/AbilitySystem/ExecCalc/ExecCalc_Damage.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "GameplayEffectExecutionCalculation.h",
+                "ExecCalc_Damage.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/AbilitySystem/ModMagCalc/MMC_MaxHealth.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "GameplayModMagnitudeCalculation.h",
+                "MMC_MaxHealth.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/AbilitySystem/ModMagCalc/MMC_MaxMana.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "GameplayModMagnitudeCalculation.h",
+                "MMC_MaxMana.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/Actor/AuraEffectActor.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "GameFramework/Actor.h",
+                "GameplayEffectTypes.h",
+                "AuraEffectActor.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UGameplayEffect",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": [
+                        {
+                            "specifiers": "BlueprintCallable",
+                            "declaration": "void ApplyEffectToTarget"
+                        },
+                        {
+                            "specifiers": "BlueprintCallable",
+                            "declaration": "void OnOverlap"
+                        },
+                        {
+                            "specifiers": "BlueprintCallable",
+                            "declaration": "void OnEndOverlap"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/Actor/AuraProjectile.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "GameFramework/Actor.h",
+                "GameplayEffectTypes.h",
+                "AuraProjectile.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "USphereComponent",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [
+                        {
+                            "specifiers": "BlueprintReadWrite, meta = (ExposeOnSpawn = true)",
+                            "name": "e"
+                        }
+                    ],
+                    "ufunctions": [
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnSphereOverlap"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/AI/AuraAIController.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "AIController.h",
+                "AuraAIController.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UBlackboardComponent",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/Character/AuraCharacter.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "Character/AuraCharacterBase.h",
+                "Interaction/PlayerInterface.h",
+                "AuraCharacter.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/Character/AuraCharacterBase.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "AbilitySystemInterface.h",
+                "Interaction/CombatInterface.h",
+                "GameFramework/Character.h",
+                "AbilitySystem/Data/CharacterClassInfo.h",
+                "AuraCharacterBase.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UAbilitySystemComponent",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [
+                        {
+                            "specifiers": "EditAnywhere, Category = \"Combat\"",
+                            "name": "e"
+                        },
+                        {
+                            "specifiers": "EditAnywhere, Category = \"Combat\"",
+                            "name": "e"
+                        },
+                        {
+                            "specifiers": "EditAnywhere, Category = \"Combat\"",
+                            "name": "e"
+                        },
+                        {
+                            "specifiers": "EditAnywhere, Category = \"Combat\"",
+                            "name": "e"
+                        }
+                    ],
+                    "ufunctions": [
+                        {
+                            "specifiers": "NetMultiCast, Reliable",
+                            "declaration": "virtual void MulticastHandleDeath"
+                        },
+                        {
+                            "specifiers": "BlueprintImplementableEvent",
+                            "declaration": "void StartDissolveTimeline"
+                        },
+                        {
+                            "specifiers": "BlueprintImplementableEvent",
+                            "declaration": "void StartWeaponDissolveTimeline"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/Character/AuraEnemy.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "Character/AuraCharacterBase.h",
+                "Interaction/EnemyInterface.h",
+                "UI/WidgetController/OverlayWidgetController.h",
+                "AuraEnemy.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UWidgetComponent",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [
+                        {
+                            "specifiers": "BlueprintAssignable",
+                            "name": "d"
+                        },
+                        {
+                            "specifiers": "BlueprintAssignable",
+                            "name": "d"
+                        }
+                    ],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/Game/AuraGameModeBase.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "GameFramework/GameModeBase.h",
+                "AuraGameModeBase.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UCharacterClassInfo",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/Input/AuraInputComponent.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "EnhancedInputComponent.h",
+                "AuraInputConfig.h",
+                "AuraInputComponent.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/Input/AuraInputConfig.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "Engine/DataAsset.h",
+                "GameplayTagContainer.h",
+                "AuraInputConfig.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UInputAction",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/Interaction/CombatInterface.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "UObject/Interface.h",
+                "GameplayTagContainer.h",
+                "AbilitySystem/Data/CharacterClassInfo.h",
+                "CombatInterface.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UAnimMontage",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [
+                        {
+                            "specifiers": "EditDefaultsOnly, BlueprintReadOnly",
+                            "name": "g"
+                        },
+                        {
+                            "specifiers": "EditDefaultsOnly, BlueprintReadOnly",
+                            "name": "g"
+                        }
+                    ],
+                    "ufunctions": [
+                        {
+                            "specifiers": "BlueprintNativeEvent, BlueprintCallable",
+                            "declaration": "FVector GetCombatSocketLocation"
+                        },
+                        {
+                            "specifiers": "BlueprintImplementableEvent, BlueprintCallable",
+                            "declaration": "void UpdateFacingTarget"
+                        },
+                        {
+                            "specifiers": "BlueprintNativeEvent, BlueprintCallable",
+                            "declaration": "bool IsDead"
+                        },
+                        {
+                            "specifiers": "BlueprintNativeEvent, BlueprintCallable",
+                            "declaration": "FTaggedMontage GetTaggedMontageByTag"
+                        },
+                        {
+                            "specifiers": "BlueprintNativeEvent, BlueprintCallable",
+                            "declaration": "int32 GetMinionCount"
+                        },
+                        {
+                            "specifiers": "BlueprintNativeEvent, BlueprintCallable",
+                            "declaration": "void IncrementMinionCount"
+                        },
+                        {
+                            "specifiers": "BlueprintNativeEvent, BlueprintCallable",
+                            "declaration": "ECharacterClass GetCharacterClass"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/Interaction/EnemyInterface.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "UObject/Interface.h",
+                "EnemyInterface.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UEnemyInterface",
+                    "inherits": [
+                        "UInterface"
+                    ],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": [
+                        {
+                            "specifiers": "BlueprintCallable, BlueprintNativeEvent",
+                            "declaration": "void SetCombatTarget"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/Interaction/PlayerInterface.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "UObject/Interface.h",
+                "PlayerInterface.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UPlayerInterface",
+                    "inherits": [
+                        "UInterface"
+                    ],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": [
+                        {
+                            "specifiers": "BlueprintNativeEvent",
+                            "declaration": "void AddToXP"
+                        },
+                        {
+                            "specifiers": "BlueprintNativeEvent",
+                            "declaration": "void LevelUp"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/Player/AuraPlayerController.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "GameFramework/PlayerController.h",
+                "GameplayTagContainer.h",
+                "AuraPlayerController.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UInputMappingContext",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": [
+                        {
+                            "specifiers": "Client, Reliable",
+                            "declaration": "void ShowDamageNumber"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/Player/AuraPlayerState.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "AbilitySystemInterface.h",
+                "GameFramework/PlayerState.h",
+                "AuraPlayerState.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UAbilitySystemComponent",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [
+                        {
+                            "specifiers": "VisibleAnywhere, ReplicatedUsing = OnRep_Level",
+                            "name": "P"
+                        }
+                    ],
+                    "ufunctions": [
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_Level"
+                        },
+                        {
+                            "specifiers": "",
+                            "declaration": "void OnRep_XP"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/UI/HUD/AuraHUD.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "GameFramework/HUD.h",
+                "AuraHUD.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UAuraUserWidget",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/UI/Widget/AuraUserWidget.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "Blueprint/UserWidget.h",
+                "AuraUserWidget.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": [
+                        {
+                            "specifiers": "BlueprintCallable",
+                            "declaration": "void SetWidgetController"
+                        },
+                        {
+                            "specifiers": "BlueprintImplementableEvent",
+                            "declaration": "void WidgetControllerSet"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/UI/Widget/DamageTextComponent.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "Components/WidgetComponent.h",
+                "DamageTextComponent.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "AURA_API",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": [
+                        {
+                            "specifiers": "BlueprintImplementableEvent, BlueprintCallable",
+                            "declaration": "void SetDamageText"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/UI/WidgetController/AttributeMenuWidgetController.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "UI/WidgetController/AuraWidgetController.h",
+                "AttributeMenuWidgetController.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UAttributeInfo",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [
+                        {
+                            "specifiers": "BlueprintAssignable, Category = \"GAS | Attributes\"",
+                            "name": "e"
+                        }
+                    ],
+                    "ufunctions": []
+                }
+            ]
+        },
+        "Public/UI/WidgetController/AuraWidgetController.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "UObject/NoExportTypes.h",
+                "AuraWidgetController.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UAbilitySystemComponent",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [],
+                    "ufunctions": [
+                        {
+                            "specifiers": "BlueprintCallable",
+                            "declaration": "void SetWidgetControllerParams"
+                        },
+                        {
+                            "specifiers": "BlueprintCallable",
+                            "declaration": "virtual void BroadcastInitialValues"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Public/UI/WidgetController/OverlayWidgetController.h": {
+            "includes": [
+                "CoreMinimal.h",
+                "UI/WidgetController/AuraWidgetController.h",
+                "GameplayTagContainer.h",
+                "OverlayWidgetController.generated.h"
+            ],
+            "classes": [
+                {
+                    "name": "UAuraUserWidget",
+                    "inherits": [],
+                    "uclass": false,
+                    "uproperties": [
+                        {
+                            "specifiers": "BlueprintAssignable, Category = \"GAS|Attributes\"",
+                            "name": "d"
+                        },
+                        {
+                            "specifiers": "BlueprintAssignable, Category = \"GAS|Attributes\"",
+                            "name": "d"
+                        },
+                        {
+                            "specifiers": "BlueprintAssignable, Category = \"GAS|Attributes\"",
+                            "name": "d"
+                        },
+                        {
+                            "specifiers": "BlueprintAssignable, Category = \"GAS|Attributes\"",
+                            "name": "d"
+                        },
+                        {
+                            "specifiers": "BlueprintAssignable, Category = \"GAS|Messages\"",
+                            "name": "e"
+                        },
+                        {
+                            "specifiers": "BlueprintAssignable, Category = \"GAS|Messages\"",
+                            "name": "e"
+                        },
+                        {
+                            "specifiers": "BlueprintAssignable, Category = \"GAS|XP\"",
+                            "name": "e"
+                        }
+                    ],
+                    "ufunctions": []
+                }
+            ]
+        }
+    },
+    "blueprints": {
+        "AbilitySystem/Aura/Abilities/Fire/FireBolt/BP_FireBolt.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Aura/Abilities/Fire/FireBolt/GA_FireBolt.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Aura/Abilities/Fire/FireBolt/GE_Cooldown_FireBolt.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Aura/Abilities/Fire/FireBolt/GE_Cost_FireBolt.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Aura/Abilities/Passive_Startup/GA_ListenForEvents.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Aura/Abilities/Passive_Startup/GE_EventBasedEffect.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Aura/Effects/GE_AuraPrimaryAttributes.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Aura/Effects/GE_Damage.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Aura/Effects/GE_SecondaryAttributes.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Aura/Effects/GE_VitalAttributes.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Data/CT_Cost.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Data/CT_Damage.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Data/CT_DamageCalculationCoefficients.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Data/CT_XP_Reward.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Data/DA_AbilityInfo.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Data/DA_AttributeInfo.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Data/DA_CharacterClassInfo.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Data/DA_LevelUpInfo.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Data/DT_InitialPrimaryValues.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Enemy/Abilities/BP_SlingshotRock.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Enemy/Abilities/GA_EnemyFireBolt.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Enemy/Abilities/GA_HitReact.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Enemy/Abilities/GA_MeleeAttack.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Enemy/Abilities/GA_RangedAttack.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Enemy/Abilities/GA_SummonAbility.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Enemy/Abilities/GA_TestGameplayAbility.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Enemy/Cues/GC_MeleeImpact.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Enemy/Effects/GE_HitReact.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Enemy/Effects/GE_PrimaryAttributes_Elementalist.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Enemy/Effects/GE_PrimaryAttributes_Ranger.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Enemy/Effects/GE_PrimaryAttributes_Warrior.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Enemy/Effects/GE_SecondaryAttributes_Enemy.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Enemy/Effects/CurveTables/CT_PrimaryAttributes_Elementalist.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Enemy/Effects/CurveTables/CT_PrimaryAttributes_Ranger.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/Enemy/Effects/CurveTables/CT_PrimaryAttributes_Warrior.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "AbilitySystem/GameplayTags/DT_PrimaryAttributes.uasset": {
+            "type": "gameplayability",
+            "dependencies": []
+        },
+        "Actor/Area/BP_FireArea.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/Area/GE_AreaFire.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/Crystal/BP_HealthCrystal.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/Crystal/BP_ManaCrystal.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/Crystal/GE_CrystalHeal.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/Crystal/GE_CrystalMana.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/FadeActor/BI_FadeInterface.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/FadeActor/BP_FadeActor.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/FlamePillar/BP_FlamePillar.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/Potion/BP_HealthCrystal.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/Potion/BP_HealthPotion.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/Potion/BP_ManaCrystal.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/Potion/BP_ManaPotion.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/Potion/CT_Potion.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/Potion/GE_PotionHeal.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/Potion/GE_PotionMana.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/TestActor/BP_TestActor.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Actor/TestActor/GE_TestAttributeBased.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "AI/AIController/BP_AuraAIController.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "AI/BehaviorTree/BB_EnemyBlackboard.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "AI/BehaviorTree/BT_ElementalistBehaviorTree.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "AI/BehaviorTree/BT_EnemyBehaviorTree.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "AI/EQS/BP_EQSTestingPawn.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "AI/EQS/EQS_PlayerContext.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "AI/EQS/EQ_FindRangedAttackPosition.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "AI/Services/BTS_FindNearestPlayer.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "AI/Tasks/BTT_Attack.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "AI/Tasks/BTT_Attack_Elementalist.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "AI/Tasks/BTT_GoAroundTarget.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "AnimNotifies/AN_MontageEvent.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/ABP_Enemy.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/BP_EnemyBase.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/Aura/ABP_Aura.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/Aura/BP_AuraCharacter.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/Demon/ABP_Demon.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/Demon/BP_Demon.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/Demon/BP_Demon_Ranger.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/Demon/BP_Demon_Warrior.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/Ghoul/ABP_Ghoul.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/Ghoul/BP_Ghoul.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/Goblin_Slingshot/ABP_Goblin_Slingshot.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/Goblin_Slingshot/ABP_Slingshot.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/Goblin_Slingshot/BP_Goblin_Slingshot.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/Goblin_Spear/ABP_Goblin_Spear.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/Goblin_Spear/BP_Goblin_Spear.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/Shaman/ABP_Shaman.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Character/Shaman/BP_Shaman.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Game/BP_AuraGameMode.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Input/DA_AuraInputConfig.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Input/IMC_AuraContext.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Input/InputActions/IA_1.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Input/InputActions/IA_2.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Input/InputActions/IA_3.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Input/InputActions/IA_4.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Input/InputActions/IA_LMB.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Input/InputActions/IA_Move.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Input/InputActions/IA_RMB.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Input/InputActions/IA_Shift.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Player/BP_AuraPlayerController.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "Player/BP_AuraPlayerState.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/AttributeMenu/WBP_AttributeMenu.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/AttributeMenu/WBP_FramedValue.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/AttributeMenu/WBP_TextValueButtonRow.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/AttributeMenu/WBP_TextValueRow.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/Button/WBP_Button.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/Button/WBP_WideButton.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/Data/DT_MessageWidgetData.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/FloatingText/BP_DamageTextComponent.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/FloatingText/WBP_DamageText.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/HUD/BP_AuraHUD.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/Overlay/WBP_Overlay.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/Overlay/SubWidget/WBP_EffectMessage.uasset": {
+            "type": "gameplayeffect",
+            "dependencies": []
+        },
+        "UI/Overlay/SubWidget/WBP_HealthManaSpells.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/ProgressBar/WBP_EnemyHealthBar.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/ProgressBar/WBP_GlobeProgressBar.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/ProgressBar/WBP_HealthGlobe.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/ProgressBar/WBP_ManaGlobe.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/ProgressBar/WBP_ProgressBar.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/ProgressBar/WBP_XPBar.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/SpellGlobe/WBP_SpellGlobe.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/WidgetController/BP_AttributeMenuWidgetController.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        },
+        "UI/WidgetController/BP_OverlayWidgetController.uasset": {
+            "type": "blueprint",
+            "dependencies": []
+        }
+    }
+}
